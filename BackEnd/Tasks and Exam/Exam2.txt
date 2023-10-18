@@ -1,0 +1,67 @@
+1- The output will be the modified array where each element has been multiplied by 10.
+
+2-The output will be 27
+
+3-The output will be 30
+
+4-The correct output will be [59.52, 83.7, 93]
+
+5-console.log(numbers.includes(2));
+ checks if the number 2 is included in the numbers array.
+ Since 2 is present in the array, the output will be true.
+
+ console.log(numbers.includes(99));
+ checks if the number 99 is included in the numbers array.
+
+
+ Since 99 is not present in the array, the output will be false.
+
+6-he output will be:
+
+scheme
+['Leonardo',
+ 'donatello',
+ 'michaelangelo',
+ 'raphael',
+ 'Shredder']
+
+7-The output will be ['Batman', 'Bane']
+
+8-The output will be
+"number"
+"function"
+"undefined"
+"object"
+"object"
+
+9-The output will be
+<div id="demo"></div>
+
+10-The output will be 
+Anonymous
+18
+Anonymous
+0
+
+11-The output will be
+ ['white', 'black', 'gray']
+ ['white', 'black', 'gray']
+ ['white', 'black', 'gray']
+
+12-The output will be 
+2
+undefined
+
+13-The output will be
+{ firstName: 'john', lastName: 'doe' }
+{ firstName: 'john', lastName: 'doe' }
+
+14-The output will be 
+50
+
+15-The output will be 
+[
+  { john: 2 },
+  { jack: 2 }
+]
+

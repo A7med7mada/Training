@@ -1,0 +1,43 @@
+class Time {
+  constructor(hours, minutes, seconds) {
+    this.hours = hours;
+    this.minutes = minutes;
+    this.seconds = seconds;
+  }
+
+  nextSecond() {
+    this.seconds++;
+    if (this.seconds >= 60) {
+      this.seconds = 0;
+      this.minutes++;
+      if (this.minutes >= 60) {
+        this.minutes = 0;
+        this.hours++;
+        if (this.hours >= 24) {
+          this.hours = 0;
+        }
+      }
+    }
+    return this;
+  }
+
+  previousSecond() {
+    this.seconds--;
+    if (this.seconds < 0) {
+      this.seconds = 59;
+      this.minutes--;
+      if (this.minutes < 0) {
+        this.minutes = 59;
+        this.hours--;
+        if (this.hours < 0) {
+          this.hours = 23;
+        }
+      }
+    }
+    return this;
+  }
+
+  toString() {
+    return `${this.hours.toString().padStart(2, '0')}:${this.minutes.toString().padStart(2, '0')}:${this.seconds.toString().padStart(2, '0')}`;
+  }
+}

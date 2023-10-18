@@ -1,0 +1,28 @@
+class Employee {
+  private id: number;
+  private name: string;
+  private salary: number;
+
+  constructor(id: number, name: string, salary: number) {
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+  }
+
+  raiseSalary(percent: number): void {
+    const increaseAmount = (this.salary * percent) / 100;
+    this.salary += increaseAmount;
+  }
+
+  getId(): number {
+    return this.id;
+  }
+
+  getName(): string {
+    return this.name;
+  }
+
+  getSalary(): number {
+    return this.salary;
+  }
+}

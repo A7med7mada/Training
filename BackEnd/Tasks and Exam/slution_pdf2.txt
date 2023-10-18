@@ -1,0 +1,240 @@
+
+}1-
+function checkEvenOrOdd(number) {
+  if (number % 2 === 0) {
+    console.log(number + " is even.");
+  } else {
+    console.log(number + " is odd.");
+  }
+}
+_____________________________________________________________________________________________________________________________________
+2-
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  }
+  else if (i % 3 === 0) {
+    console.log("Fizz");
+  }
+  else if (i % 5 === 0) {
+    console.log("Buzz");
+  }
+  else {
+    console.log(i);
+  }
+}
+_______________________________________________________________________________________________________________________________________
+3-
+function reverseString(str) {
+
+  let charArray = str.split("");
+
+  let reversedArray = charArray.reverse();
+
+  let reversedString = reversedArray.join("");
+
+  return reversedString;
+}
+let inputString = "welcome";
+
+let reversed = reverseString(inputString);
+
+console.log(reversed);
+_______________________________________________________________________________________________________________________________________
+4-
+function computeCircleArea(radius) {
+  if (radius < 0) {
+    return "Invalid radius. Please provide a non-negative value.";
+  }
+
+  let area = Math.PI * Math.pow(radius, 2);
+
+  return area;
+}
+
+function computeCircleCircumference(radius) {
+  if (radius < 0) {
+    return "Invalid radius. Please provide a non-negative value.";
+  }
+
+  let circumference = 2 * Math.PI * radius;
+
+  return circumference;
+}
+
+let radius = 5;
+let area = computeCircleArea(radius);
+let circumference = computeCircleCircumference(radius);
+
+console.log("Radius:", radius);
+console.log("Area:", area);
+console.log("Circumference:", circumference);
+__________________________________________________________________________________________________________________________________________
+5-
+function checkNumbers(num1, num2) {
+  if (num1 === 50 || num2 === 50 || num1 + num2 === 50) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let number1 = 30;
+let number2 = 20;
+let result = checkNumbers(number1, number2);
+console.log(result);
+__________________________________________________________________________________________________________________________________________
+6-
+function checkOppositeSigns(num1, num2) {
+
+  if ((num1 < 0 && num2 > 0) || (num1 > 0 && num2 < 0)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let number1 = 10;
+let number2 = -5;
+let result = checkOppositeSigns(number1, number2);
+console.log(result);
+__________________________________________________________________________________________________________________________________________
+7-
+function checkMultiples(num) {
+if (num % 5 === 0 || num % 8 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+let number = 40;
+let result = checkMultiples(number);
+console.log(result);
+__________________________________________________________________________________________________________________________________________
+8-
+function findLargest(num1, num2, num3) {
+  let largest = num1;
+
+  if (num2 > largest) {
+    largest = num2;
+  }
+
+  if (num3 > largest) {
+    largest = num3;
+  }
+
+  return largest;
+}
+
+let number1 = 10;
+let number2 = 25;
+let number3 = 15;
+let largestNumber = findLargest(number1, number2, number3);
+console.log(largestNumber);
+__________________________________________________________________________________________________________________________________________
+9-
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+  sum += i;
+}
+
+console.log("The sum of the numbers from 1 to 10 is: " + sum);
+__________________________________________________________________________________________________________________________________________10-
+for (let i = 1; i <= 5; i++) {
+  let row = '';
+
+  for (let j = 1; j <= i; j++) {
+    row += '*';
+  }
+
+  console.log(row);
+}
+__________________________________________________________________________________________________________________________________________
+11-
+function checkNumber(number) {
+  if (number > 0) {
+    console.log("The number is positive.");
+  } else if (number < 0) {
+    console.log("The number is negative.");
+  } else {
+    console.log("The number is zero.");
+  }
+}
+__________________________________________________________________________________________________________________________________________
+12-
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Input 10 elements in the array:\n', (answer) => {
+  const elements = answer.split(' ').map(Number);
+
+  console.log('Elements in the array:');
+  for (let i = 0; i < elements.length; i++) {
+    console.log(`element - ${i} : ${elements[i]}`);
+  }
+
+  rl.close();
+});
+__________________________________________________________________________________________________________________________________________
+13-
+const num1 = 5;
+const num2 = 10;
+const sum = num1 + num2;
+
+console.log("The sum of " + num1 + " and " + num2 + " is: " + sum)
+__________________________________________________________________________________________________________________________________________
+14-
+function calculateFactorial(number) {
+  let factorial = 1;
+
+  for (let i = 1; i <= number; i++) {
+    factorial *= i;
+  }
+
+  return factorial;
+}
+
+const number = 5;
+const factorial = calculateFactorial(number);
+
+console.log("The factorial of " + number + " is: " + factorial);
+__________________________________________________________________________________________________________________________________________
+15-
+const operator = prompt("Enter the operator (+, -, *, /):");
+
+if (operator !== "+" && operator !== "-" && operator !== "*" && operator !== "/") {
+  console.log("Invalid operator");
+} else {
+  const operand1 = parseFloat(prompt("Enter the first operand:"));
+  const operand2 = parseFloat(prompt("Enter the second operand:"));
+
+  let result;
+  
+  switch (operator) {
+    case "+":
+      result = operand1 + operand2;
+      break;
+    case "-":
+      result = operand1 - operand2;
+      break;
+    case "*":
+      result = operand1 * operand2;
+      break;
+    case "/":
+      if (operand2 === 0) {
+        console.log("Cannot divide by zero");
+      } else {
+        result = operand1 / operand2;
+      }
+      break;
+  }
+
+  if (result !== undefined) {
+    console.log("Result:", result);
+  }
+}

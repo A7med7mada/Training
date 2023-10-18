@@ -1,0 +1,49 @@
+class GeometricObject {
+  getArea() {
+    throw new Error("Method 'getArea()' must be implemented.");
+  }
+
+  getPerimeter() {
+    throw new Error("Method 'getPerimeter()' must be implemented.");
+  }
+}
+
+class Circle extends GeometricObject {
+  constructor(radius) {
+    super();
+    this.radius = radius;
+  }
+
+  getArea() {
+    return Math.PI * this.radius * this.radius;
+  }
+
+  getPerimeter() {
+    return 2 * Math.PI * this.radius;
+  }
+}
+
+class Rectangle extends GeometricObject {
+  constructor(width, height) {
+    super();
+    this.width = width;
+    this.height = height;
+  }
+
+  getArea() {
+    return this.width * this.height;
+  }
+
+  getPerimeter() {
+    return 2 * (this.width + this.height);
+  }
+}
+
+
+const circle = new Circle(5);
+console.log("Circle area:", circle.getArea()); 
+console.log("Circle perimeter:", circle.getPerimeter());
+
+const rectangle = new Rectangle(4, 6);
+console.log("Rectangle area:", rectangle.getArea()); 
+console.log("Rectangle perimeter:", rectangle.getPerimeter()); 

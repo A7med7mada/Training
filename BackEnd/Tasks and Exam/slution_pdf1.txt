@@ -1,0 +1,81 @@
+1-
+	<h2>Parmesan Deviled Eggs</h2>
+	<p>These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.</p>
+
+2-
+	<form>
+        	<p>Please select your department:</p>
+        	<input type="radio" id="cs" name="department" value="cs">
+        	<label for="cs">CS</label><br>
+        	<input type="radio" id="is" name="department" value="is">
+        	<label for="is">IS</label><br>
+        	<input type="radio" id="it" name="department" value="it">
+        	<label for="it">IT</label><br>
+    	</form>
+
+3-
+
+"image1.jpg" is displayed when the screen element is at least 1000 pixels wide,
+"image2.jpg" displayed when the screen element is at least 750 pixels wide,
+"image3.jpg" is displayed when rendering if <source> does not match the current conditions so the <img> element is used as a replacement
+
+4- <table>
+        <tr>
+          <td style="background-color: yellow;">Col 1</td>
+          <td style="background-color: yellow;">Col 2</td>
+          <td>Col 3</td>
+        </tr>
+        <tr>
+          <td style="background-color: yellow;">first</td>
+          <td style="background-color: yellow;">second</td>
+          <td>third</td>
+        </tr>
+      </table>
+
+5-
+	<ul>
+         <li>Office Supplies
+       	  <ul>
+           <li>Stapler</li>
+           <li>Paper clips</li>
+          </ul>
+         </li>
+
+         <li>Groceries
+          <ul>
+            <li>Milk</li>
+          </ul>
+         </li>
+      	</ul>
+6-
+	<b>"Making money is what you have to do to sustain a business - being driven to make something of value and purpose is much more powerful."</b>
+    	<footer>Lynda Weinman</footer>
+
+7-
+
+ Audio files are displayed on the page and their extension is determined by <Audio Controls>
+
+8-
+
+ d   
+
+9-
+
+	<address>
+  	 <strong>Mailing Address</strong><br>
+  	 6410 Via Real<br>
+  	 Carpinteria, CA 93013<br>
+  	 <a href="mailto:info@linkedin.com">info@linkedin.com</a>
+	</address>
+
+10-
+
+
+11-
+
+
+12-
+
+احمد احمد مصطفي المرسي حمادة 
+كلية حاسبات جامعة المنصورة 
+Back End NodeJS G1 2023

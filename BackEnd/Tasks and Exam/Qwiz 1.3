@@ -1,0 +1,33 @@
+class Rectangle {
+  private length: number;
+  private width: number;
+
+  constructor(length: number, width: number) {
+    this.length = length;
+    this.width = width;
+  }
+
+  getLength(): number {
+    return this.length;
+  }
+
+  setLength(length: number): void {
+    this.length = length;
+  }
+
+  getWidth(): number {
+    return this.width;
+  }
+
+  setWidth(width: number): void {
+    this.width = width;
+  }
+
+  area(): number {
+    return this.length * this.width;
+  }
+
+  perimeter(): number {
+    return 2 * (this.length + this.width);
+  }
+}

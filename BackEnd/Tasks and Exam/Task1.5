@@ -1,0 +1,16 @@
+class InvoiceItem {
+  constructor(id, description, quantity, unitPrice) {
+    this.id = id;
+    this.description = description;
+    this.quantity = quantity;
+    this.unitPrice = unitPrice;
+  }
+
+  getTotal() {
+    return this.quantity * this.unitPrice;
+  }
+
+  toString() {
+    return `InvoiceItem - ID: ${this.id}, Description: ${this.description}, Quantity: ${this.quantity}, Unit Price: ${this.unitPrice}`;
+  }
+}

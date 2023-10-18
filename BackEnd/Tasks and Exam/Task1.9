@@ -1,0 +1,41 @@
+class Ball {
+  constructor(radius, x, y, deltaX, deltaY) {
+    this.radius = radius;
+    this.x = x;
+    this.y = y;
+    this.deltaX = deltaX;
+    this.deltaY = deltaY;
+  }
+
+  move() {
+    this.x += this.deltaX;
+    this.y += this.deltaY;
+  }
+
+  reflectHorizontal() {
+    this.deltaX = -this.deltaX;
+  }
+
+  reflectVertical() {
+    this.deltaY = -this.deltaY;
+  }
+
+  toString() {
+    return `Ball - Radius: ${this.radius}, Position: (${this.x},${this.y}), Delta: (${this.deltaX},${this.deltaY})`;
+  }
+}
+
+
+const ball = new Ball(10, 50, 50, 5, 2);
+console.log(ball.toString());
+
+ball.move();
+console.log(ball.toString());
+
+ball.reflectHorizontal();
+ball.move();
+console.log(ball.toString()); 
+
+ball.reflectVertical();
+ball.move();
+console.log(ball.toString()); 
